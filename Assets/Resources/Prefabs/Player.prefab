@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4527377488159243358}
   - component: {fileID: 4527377488159243353}
-  - component: {fileID: 4527377488159243356}
+  - component: {fileID: -259096151902993558}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4527377488159243356
+--- !u!114 &-259096151902993558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4527377488159243352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2599f55162ba35d4eb56b9452563e70f, type: 3}
+  m_Script: {fileID: 11500000, guid: ed3a7350a085cd64b8372370238673b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 1

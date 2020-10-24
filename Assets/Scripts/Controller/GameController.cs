@@ -1,4 +1,6 @@
 ﻿
+using UnityEngine;
+
 namespace OGJ.Controller
 {    
     public class GameController : CustomMonoBehaviour
@@ -7,7 +9,7 @@ namespace OGJ.Controller
 
         public ServicesController servicesController;
 
-        public PopupsSet popupsSet;
+        public PopupsSet popupsSet;            
 
         void Awake()
         {

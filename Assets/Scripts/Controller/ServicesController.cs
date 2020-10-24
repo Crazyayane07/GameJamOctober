@@ -1,6 +1,7 @@
 ﻿
 using OGJ.Controller.Services;
-using UnityEngine.Analytics;
+using System.Diagnostics;
+using UnityEngine;
 
 namespace OGJ.Controller
 {
@@ -12,6 +13,7 @@ namespace OGJ.Controller
 
         public ServicesController(PopupsSet popupsSet)
         {
+            UnityEngine.Debug.Log("Stworzenie");
             gameOverService = new GameOverService();
             popupsService = new PopupsService(popupsSet);
             scenesService = new ScenesService();
