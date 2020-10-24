@@ -110,4 +110,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
-  renderer: {fileID: 1810109367291677372}
+  meshRenderer: {fileID: 1810109367291677372}
