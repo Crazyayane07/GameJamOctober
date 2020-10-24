@@ -36,6 +36,7 @@ namespace OGJ.Controller
         private void OnPlayerDeath()
         {
             gameOverService.GameOver();
+            popupsService.OpenGameOverPopup();
         }
     }
 }
