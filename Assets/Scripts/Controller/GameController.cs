@@ -7,12 +7,14 @@ namespace OGJ.Controller
 
         public ServicesController servicesController;
 
+        public PopupsSet popupsSet;
+
         void Awake()
         {
             if (gameController == null)
             {
                 gameController = this;
-                servicesController = new ServicesController();
+                servicesController = new ServicesController(popupsSet);
                 DontDestroyOnLoad(this);
             }
         }
