@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace OGJ.View.UI
@@ -23,7 +22,7 @@ namespace OGJ.View.UI
 
         private void StartGame()
         {
-            SceneManager.LoadScene(Constans.GAME_SCENE);
+            scenesService.OpenGameScene();
         }
 
         private void OpenOptions()

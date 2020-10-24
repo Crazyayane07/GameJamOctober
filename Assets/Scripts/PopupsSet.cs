@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using OGJ.View.UI.Popups;
 
 namespace OGJ
 {
@@ -6,5 +7,7 @@ namespace OGJ
     public class PopupsSet
     {
         public Canvas canvas;
+
+        public GameOverPopup gameOverPopup;
     }
 }

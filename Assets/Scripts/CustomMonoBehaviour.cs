@@ -10,6 +10,8 @@ namespace OGJ
 
         protected IGameOverService gameOverService { get { return Controler.servicesController.gameOverService; } }
         protected IPopupsService popupsService { get { return Controler.servicesController.popupsService; } }
+        protected IScenesService scenesService { get { return Controler.servicesController.scenesService; } }
+
         protected void SetActive(bool active)
         {
             gameObject.SetActive(active);
