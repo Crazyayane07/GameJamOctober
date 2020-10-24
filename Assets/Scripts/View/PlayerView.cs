@@ -13,7 +13,7 @@ namespace OGJ.View
         public GameObject bullet;
         private void Awake()
         {
-            playerController = new PlayerController();
+            playerController = gameObject.AddComponent<PlayerController>() as PlayerController;
         }
         void Update()
         {
