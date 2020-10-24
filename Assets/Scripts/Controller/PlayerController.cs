@@ -1,36 +1,42 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+namespace OGJ.Controller
 {
-    [SerializeField]
-    private int speed = 1;
-    // Start is called before the first frame update
-    void Start()
+    public class PlayerController : CustomMonoBehaviour
     {
-        
-    }
+        [SerializeField]
+        private int speed = 1;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.LeftArrow))
+        void Update()
         {
-            transform.position += Vector3.left * speed * Time.deltaTime;
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                transform.position += Vector3.left * speed * Time.deltaTime;
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                transform.position += Vector3.right * speed * Time.deltaTime;
+            }
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                transform.position += Vector3.up * speed * Time.deltaTime;
+            }
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                transform.position += Vector3.down * speed * Time.deltaTime;
+            }
+
+            //TO DELETE
+            if (Input.GetKey(KeyCode.K))
+            {
+                OnPlayerDeath();
+            }
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+
+        private void OnPlayerDeath()
         {
-            transform.position += Vector3.right * speed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            transform.position += Vector3.up * speed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.position += Vector3.down * speed * Time.deltaTime;
+            gameOverService.GameOver();
         }
     }
 }
+
