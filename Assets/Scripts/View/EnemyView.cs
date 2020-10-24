@@ -18,7 +18,6 @@ public class EnemyView : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("COLLISION");
         Destroy(collision.gameObject);
         Destroy(gameObject);
     }
