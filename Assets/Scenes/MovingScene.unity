@@ -213,6 +213,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -259096151902993558, guid: f609c00d879268048b95a25c0392a08f, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 8409073760914585106, guid: ff40e87c161a73e44b1850d8c82bcd49, type: 3}
     - target: {fileID: 4527377488159243352, guid: f609c00d879268048b95a25c0392a08f, type: 3}
       propertyPath: m_Name
       value: Player
@@ -295,7 +299,6 @@ MonoBehaviour:
   popupsSet:
     canvas: {fileID: 0}
     gameOverPopup: {fileID: 0}
-  playerModel: {fileID: 4527377488159243352, guid: f609c00d879268048b95a25c0392a08f, type: 3}
 --- !u!4 &2130353934
 Transform:
   m_ObjectHideFlags: 0

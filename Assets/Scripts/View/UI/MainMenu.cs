@@ -22,7 +22,7 @@ namespace OGJ.View.UI
 
         private void StartGame()
         {
-            UnityEngine.Debug.Log("OpenGameScene");
+            Debug.Log("OpenGameScene");
 
             scenesService.OpenGameScene();
         }

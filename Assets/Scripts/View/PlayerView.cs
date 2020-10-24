@@ -10,6 +10,7 @@ namespace OGJ.View
         private int speed = 1;
 
         private PlayerController playerController;
+        public GameObject bullet;
         private void Awake()
         {
             playerController = new PlayerController();
@@ -34,7 +35,7 @@ namespace OGJ.View
             }
             if (Input.GetKey(KeyCode.Space))
             {
-                playerController.Shoot();
+                playerController.Shoot(bullet, transform);
             }
             //TO DELETE
             if (Input.GetKey(KeyCode.K))
