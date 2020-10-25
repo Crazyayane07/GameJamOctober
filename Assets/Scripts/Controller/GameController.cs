@@ -9,14 +9,17 @@ namespace OGJ.Controller
 
         public ServicesController servicesController;
 
-        public PopupsSet popupsSet;            
+        public PopupsSet popupsSet;
+        public PowerUpSet powerUpSet;
+
+        public Spawner spawner;
 
         void Awake()
         {
             if (gameController == null)
             {
                 gameController = this;
-                servicesController = new ServicesController(popupsSet);
+                servicesController = new ServicesController(popupsSet, powerUpSet);
                 DontDestroyOnLoad(this);
             }
         }

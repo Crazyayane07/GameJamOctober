@@ -11,13 +11,15 @@ namespace OGJ.Controller
         public IPopupsService popupsService { get; private set; }
         public IScenesService scenesService { get; private set; }
         public IPauseService pauseService { get; private set; }
+        public IPowerUpService powerUpService { get; private set; }
 
-        public ServicesController(PopupsSet popupsSet)
+        public ServicesController(PopupsSet popupsSet, PowerUpSet powerUpSet)
         {
             gameOverService = new GameOverService();
             popupsService = new PopupsService(popupsSet);
             scenesService = new ScenesService();
             pauseService = new PauseService();
+            powerUpService = new PowerUpService(powerUpSet);
         }
     }
 }
