@@ -30,7 +30,8 @@ namespace OGJ.View.UI
 
         private void OpenOptions()
         {
-            //TO DO
+            popupsService.OpenOptions();
+            SetActive(false);
         }
 
         private void ExitGame()

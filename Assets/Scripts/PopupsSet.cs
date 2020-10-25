@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using OGJ.View.UI.Popups;
+using OGJ.View.UI;
 
 namespace OGJ
 {
@@ -10,5 +11,6 @@ namespace OGJ
 
         public GameOverPopup gameOverPopup;
         public PausePopup pausePopup;
+        public Options options;
     }
 }

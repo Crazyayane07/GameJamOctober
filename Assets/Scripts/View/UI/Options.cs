@@ -1,13 +1,15 @@
 ﻿
+using OGJ.View.UI.Popups;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace OGJ.View.UI
 {
-    public class Options : CustomMonoBehaviour
+    public class Options : Popup
     {
         public Slider musicVolume;
-        public Dropdown resolutionDrpdn;
+        public TMP_Dropdown resolutionDrpdn;
         public Toggle fullscreenToggle;
 
         private void Awake()
