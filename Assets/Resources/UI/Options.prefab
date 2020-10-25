@@ -1848,7 +1848,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ce99a7830954c204194a181c370fe97e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65b8a9434e6d8344c940f9c606b489f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1944,8 +1944,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicVolume: {fileID: 8479954121194525745}
-  resolutionDrpdn: {fileID: 0}
-  fullscreenToggle: {fileID: 0}
+  resolutionDrpdn: {fileID: 8479954121264514184}
+  fullscreenToggle: {fileID: 8479954122300168837}
+  backBtn: {fileID: 8479954122185032321}
 --- !u!1 &8479954122006803046
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,7 +2254,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 65b8a9434e6d8344c940f9c606b489f8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce99a7830954c204194a181c370fe97e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

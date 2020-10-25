@@ -8,6 +8,9 @@ namespace OGJ.Controller.Services
 
         void OpenPausePopup();
         void ClosePausePopup();
+
+        void OpenOptions();
+        void CloseOptions();
     }
 
     public class PopupsService : IPopupsService
@@ -24,6 +27,11 @@ namespace OGJ.Controller.Services
             popupsSet.gameOverPopup.ClosePopup();
         }
 
+        public void CloseOptions()
+        {
+            popupsSet.options.ClosePopup();
+        }
+
         public void ClosePausePopup()
         {
             popupsSet.pausePopup.ClosePopup();
@@ -32,6 +40,11 @@ namespace OGJ.Controller.Services
         public void OpenGameOverPopup()
         {
             popupsSet.gameOverPopup.OpenPopup();
+        }
+
+        public void OpenOptions()
+        {
+            popupsSet.options.OpenPopup();
         }
 
         public void OpenPausePopup()
