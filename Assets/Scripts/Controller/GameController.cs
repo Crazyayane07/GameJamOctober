@@ -21,7 +21,7 @@ namespace OGJ.Controller
             if (gameController == null)
             {
                 gameController = this;
-                servicesController = new ServicesController(popupsSet);
+                servicesController = new ServicesController(popupsSet, powerUpSet, audioMixer);
                 DontDestroyOnLoad(this);
             }
         }
