@@ -312,6 +312,11 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &925074956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8479954121908353991, guid: 8144ffaee161d254abe3a86a21d582e8, type: 3}
+  m_PrefabInstance: {fileID: 8479954121396313330}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &925074957 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8479954121908353988, guid: 8144ffaee161d254abe3a86a21d582e8, type: 3}
@@ -322,7 +327,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8479954121908353989, guid: 8144ffaee161d254abe3a86a21d582e8, type: 3}
   m_PrefabInstance: {fileID: 8479954121396313330}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 925074956}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e528a37a918be8b48915c58edcb32523, type: 3}
@@ -394,11 +399,6 @@ Transform:
   m_Father: {fileID: 1562740665}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1027544697 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5754327302644820558, guid: d33e4e292a07327459e6cb611ddb5e85, type: 3}
-  m_PrefabInstance: {fileID: 474657308959880125}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1504505103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,9 +1330,17 @@ PrefabInstance:
       value: -783.345
       objectReference: {fileID: 0}
     - target: {fileID: 8479954122185032321, guid: 8144ffaee161d254abe3a86a21d582e8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8479954122185032321, guid: 8144ffaee161d254abe3a86a21d582e8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1027544697}
+      objectReference: {fileID: 925074956}
+    - target: {fileID: 8479954122185032321, guid: 8144ffaee161d254abe3a86a21d582e8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8479954122300168836, guid: 8144ffaee161d254abe3a86a21d582e8, type: 3}
       propertyPath: m_AnchorMin.y
       value: 1
