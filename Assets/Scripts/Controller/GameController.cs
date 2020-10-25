@@ -1,5 +1,5 @@
 ﻿
-using UnityEngine;
+using UnityEngine.Audio;
 
 namespace OGJ.Controller
 {    
@@ -9,14 +9,16 @@ namespace OGJ.Controller
 
         public ServicesController servicesController;
 
-        public PopupsSet popupsSet;            
+        public PopupsSet popupsSet;
+
+        public AudioMixer audioMixer;
 
         void Awake()
         {
             if (gameController == null)
             {
                 gameController = this;
-                servicesController = new ServicesController(popupsSet);
+                servicesController = new ServicesController(popupsSet, audioMixer);
                 DontDestroyOnLoad(this);
             }
         }

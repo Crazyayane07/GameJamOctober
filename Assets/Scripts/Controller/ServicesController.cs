@@ -2,6 +2,7 @@
 using OGJ.Controller.Services;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.Audio;
 
 namespace OGJ.Controller
 {
@@ -11,13 +12,14 @@ namespace OGJ.Controller
         public IPopupsService popupsService { get; private set; }
         public IScenesService scenesService { get; private set; }
         public IPauseService pauseService { get; private set; }
-
-        public ServicesController(PopupsSet popupsSet)
+        public IAudioService audioService { get; private set; }
+        public ServicesController(PopupsSet popupsSet, AudioMixer audioMixer)
         {
             gameOverService = new GameOverService();
             popupsService = new PopupsService(popupsSet);
             scenesService = new ScenesService();
             pauseService = new PauseService();
+            audioService = new AudioService(audioMixer);
         }
     }
 }

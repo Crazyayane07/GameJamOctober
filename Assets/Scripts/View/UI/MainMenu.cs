@@ -13,6 +13,7 @@ namespace OGJ.View.UI
         {
             SetUpButtons();
         }
+
         private void SetUpButtons()
         {
             startBtn.onClick.AddListener(StartGame);
