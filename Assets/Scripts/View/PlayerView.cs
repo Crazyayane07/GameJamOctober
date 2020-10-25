@@ -43,5 +43,14 @@ namespace OGJ.View
                 playerController.OnPlayerDeath();
             }
         }
+
+        void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (!collision.gameObject.GetComponent<BulletView>().isPlayerBullet)
+            {
+                Destroy(collision.gameObject);
+                playerController.OnPlayerDeath();
+            }
+        }
     }
 }

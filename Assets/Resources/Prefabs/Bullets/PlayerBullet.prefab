@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  isPlayerBullet: 1
 --- !u!50 &611851439411814680
 Rigidbody2D:
   serializedVersion: 4
