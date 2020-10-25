@@ -10,13 +10,14 @@ namespace OGJ.Controller
         public IGameOverService gameOverService { get; private set; }
         public IPopupsService popupsService { get; private set; }
         public IScenesService scenesService { get; private set; }
+        public IPauseService pauseService { get; private set; }
 
         public ServicesController(PopupsSet popupsSet)
         {
-            UnityEngine.Debug.Log("Stworzenie");
             gameOverService = new GameOverService();
             popupsService = new PopupsService(popupsSet);
             scenesService = new ScenesService();
+            pauseService = new PauseService();
         }
     }
 }

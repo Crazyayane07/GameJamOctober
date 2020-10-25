@@ -29,5 +29,17 @@ namespace OGJ.View.UI.Popups
             scenesService.OpenMainMenuScene();
             ClosePopup();
         }
+
+        protected override void OnOpenPopup()
+        {
+            base.OnOpenPopup();
+            pauseService.TryPauseGame();
+        }
+
+        protected override void OnClosePopup()
+        {
+            base.OnClosePopup();
+            pauseService.TryPauseGame();
+        }
     }
 }
