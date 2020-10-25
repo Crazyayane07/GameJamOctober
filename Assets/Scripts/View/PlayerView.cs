@@ -37,11 +37,11 @@ namespace OGJ.View
             {
                 playerController.Shoot(bullet, transform);
             }
-            //TO DELETE
-            if (Input.GetKey(KeyCode.K))
-            {
-                playerController.OnPlayerDeath();
-            }
+        }
+
+        public void KillPlayer()
+        {
+            playerController.OnPlayerDeath();
         }
 
         void OnCollisionEnter2D(Collision2D collision)

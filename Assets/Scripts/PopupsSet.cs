@@ -9,5 +9,6 @@ namespace OGJ
         public Canvas canvas;
 
         public GameOverPopup gameOverPopup;
+        public PausePopup pausePopup;
     }
 }
