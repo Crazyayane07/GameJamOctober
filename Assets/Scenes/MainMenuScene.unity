@@ -487,6 +487,7 @@ GameObject:
   - component: {fileID: 1562740665}
   - component: {fileID: 1562740664}
   - component: {fileID: 1562740666}
+  - component: {fileID: 1562740667}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -510,6 +511,11 @@ MonoBehaviour:
     canvas: {fileID: 692750106}
     gameOverPopup: {fileID: 2999117074511331756}
     pausePopup: {fileID: 7105856297148419590}
+  powerUpSet:
+    powerUps:
+    - {fileID: 2691864520487574478, guid: d84a305a7d571b0459af8eddcce637a4, type: 3}
+    - {fileID: 7722206577812738992, guid: 8e42c14c3a46a47408db20ab4115e29a, type: 3}
+  spawner: {fileID: 1562740667}
 --- !u!4 &1562740665
 Transform:
   m_ObjectHideFlags: 0
@@ -622,6 +628,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1562740667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562740663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2d3087235e2094b9131807aafbedd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &474657308959880125
 PrefabInstance:
   m_ObjectHideFlags: 0

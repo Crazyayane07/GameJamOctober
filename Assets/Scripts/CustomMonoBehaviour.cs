@@ -12,6 +12,7 @@ namespace OGJ
         protected IPopupsService popupsService { get { return controller.servicesController.popupsService; } }
         protected IScenesService scenesService { get { return controller.servicesController.scenesService; } }
         protected IPauseService pauseService { get { return controller.servicesController.pauseService; } }
+        protected IPowerUpService powerUpService { get { return controller.servicesController.powerUpService; } }
         protected void SetActive(bool active)
         {
             gameObject.SetActive(active);

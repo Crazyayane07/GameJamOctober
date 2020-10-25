@@ -1,27 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using OGJ;
 using UnityEngine;
 
-public class EnemyView : MonoBehaviour
+public class EnemyView : CustomMonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public float dropChance = 1.0f;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.GetComponent<BulletView>().isPlayerBullet)
         {
-            Destroy(collision.gameObject);
-            Destroy(gameObject);
+            KillEnemy(collision);
         }
+    }
+
+    private void KillEnemy(Collision2D collision)
+    {
+        powerUpService.TrySpawnRandomPowerUp(this.transform, dropChance);
+
+        Destroy(collision.gameObject);
+        Destroy(gameObject);
     }
 }
