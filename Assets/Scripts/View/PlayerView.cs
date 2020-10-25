@@ -6,8 +6,7 @@ namespace OGJ.View
 {
     public class PlayerView : CustomMonoBehaviour
     {
-        [SerializeField]
-        private int speed = 1;
+        public int speed = 5;
 
         private PlayerController playerController;
         public GameObject bullet;

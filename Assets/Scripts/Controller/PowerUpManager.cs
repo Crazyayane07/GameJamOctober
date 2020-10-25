@@ -5,6 +5,7 @@ namespace OGJ.Controller
 {
     public class PowerUpManager : CustomMonoBehaviour
     {
+        public PlayerView player;
         private void OnCollisionEnter2D(Collision2D collision)
         {
             if (collision.gameObject.tag != Constans.POWER_UP_TAG)
@@ -15,7 +16,10 @@ namespace OGJ.Controller
             if (powerUp == null)
                 return;
 
-            powerUp.ActivatePowerUp();
+            if (player == null)
+                return;
+
+            powerUp.ActivatePowerUp(player);
         }
     }
 }

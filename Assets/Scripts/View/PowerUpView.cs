@@ -1,6 +1,7 @@
 ﻿using OGJ.Controller;
 using OGJ.Controller.PowerUps;
 using OGJ.Model;
+using UnityEngine;
 
 namespace OGJ.View
 {
@@ -14,7 +15,7 @@ namespace OGJ.View
             switch (powerUpType)
             {
                 case PowerUpsTypes.SpeedUp:
-                    SetUp(new SpeedUpPowerUpController());
+                    SetUp(new SpeedUpPowerUpController(4000));
                     break;
                 default:
                     SetUp(new TestPowerUpController());
@@ -27,12 +28,12 @@ namespace OGJ.View
             this.powerUpController = powerUpController;
         }
 
-        public void ActivatePowerUp()
+        public void ActivatePowerUp(PlayerView player)
         {
             if (powerUpController == null)
                 return;
 
-            powerUpController.ActivatePowerUp();
+            powerUpController.ActivatePowerUpAsync(player);
             SetActive(false);
         }
     }
